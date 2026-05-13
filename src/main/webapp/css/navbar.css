@@ -1,0 +1,119 @@
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 24px;
+    color: #ff6b00 !important;
+}
+
+.navbar-brand .seva {
+    color: #2e86de !important;
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+/* BUTTONS */
+/* BUTTONS */
+
+.btn-restaurant {
+    background: white;
+    color: #2e86de !important;
+
+    border: 1px solid #2e86de;
+
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.btn-restaurant:hover {
+    background: #2e86de;
+    color: white !important;
+}
+.btn-cart {
+    background: white;
+    color: #ff7a00 !important;
+
+    border: 1px solid #ff7a00;
+
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 5px 12px;
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+.btn-cart:hover {
+    background: #ff7a00;
+    color: white !important;
+    border: 1px solid #ff7a00;
+}
+
+.btn-login {
+    background: #ff6b00;
+    color: white !important;
+
+    border: 1px solid #ff6b00;
+
+    border-radius: 25px;
+    padding: 5px 12px;
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.btn-login:hover {
+    background: white;
+    color: #ff6b00 !important;
+    border: 1px solid #ff6b00;
+}
+/* BUTTONS */
+
+.btn-restaurant,
+.btn-cart,
+.btn-login {
+    padding: 5px 12px;
+    font-size: 16px;
+}
+
+
+.btn-cart {
+    position: relative;
+}
+
+/* RED NOTIFICATION BADGE */
+.cart-badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+
+    background: red;
+    color: white;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

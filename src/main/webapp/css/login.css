@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(135deg, #ff6b00, #ff8c1a);
+    overflow: hidden;
+}
+
+/* COMMON IMAGE STYLE */
+.left-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🔝 TOP IMAGE */
+.img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 220px;
+    overflow: hidden;
+    border-bottom-right-radius: 160px;
+}
+
+/* 🟡 MIDDLE IMAGE */
+.img-middle {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 260px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 0 160px 160px 0;
+}
+
+/* 🔻 RIGHT TRIANGLE IMAGE (FIXED) */
+.img-bottom {
+    position: absolute;
+
+    bottom: -120px;   /* 🔥 push down more */
+    right: -120px;    /* 🔥 push right more */
+
+    width: 420px;
+    height: 420px;
+
+    border-radius:20%;   /* full circle */
+    overflow: hidden;
+
+    z-index: 3;
+}
+
+/* IMAGE FIX */
+.img-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    object-position: 70% 80%;   /* 🔥 adjust this */
+}
+/* TEXT */
+.left-content {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    max-width: 260px;
+}
+
+.left-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    flex: 1;
+    background: #fff7f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CARD */
+.login-card {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: white;
+    padding: 25px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff6b00;
+}
+.left-content h1 {
+    white-space: nowrap;
+    font-size: clamp(20px, 2.5vw, 32px);
+}
+/* BUTTON */
+.btn-login {
+    background: #ff6b00;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #e65c00;
+}
+
+/* TEXT */
+.subtext {
+    color: #777;
+    font-size: 14px;
+}
+
+/* INPUT FOCUS */
+.form-control:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 0 0.2rem rgba(255,107,0,0.2);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .left-panel {
+        display: none;
+    }
+
+    .right-panel {
+        width: 100%;
+    }
+}

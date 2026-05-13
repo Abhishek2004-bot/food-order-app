@@ -1,0 +1,95 @@
+body {
+    background: #f5f6fa;
+    font-family: Arial, sans-serif;
+}
+
+/* container */
+.cart-container {
+    max-width: 900px;
+}
+
+/* CART CARD */
+.cart-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* IMAGE */
+.cart-img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* LEFT */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* NAME */
+.item-name {
+    font-weight: 600;
+}
+
+/* QTY BOX */
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 🔥 FIXED BUTTONS */
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ORANGE BUTTONS */
+.qty-btn.minus,
+.qty-btn.plus {
+    background: #ff7a00;
+}
+
+/* HOVER EFFECT */
+.qty-btn:hover {
+    background: #ff6200;
+    transform: scale(1.1);
+}
+
+/* VALUE */
+.qty-value {
+    font-weight: bold;
+}
+
+/* REMOVE */
+.btn-danger {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+/* TOTAL */
+.total-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}

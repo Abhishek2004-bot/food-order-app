@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f7fb;
+}
+
+/* MAIN LAYOUT */
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* LEFT SIDE */
+.left {
+    flex: 0.55;
+    position: relative;
+    background: linear-gradient(135deg, #fffaf5, #fff1e6);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE SHAPES */
+.left {
+    flex: 0.55;
+    position: relative;
+    background: linear-gradient(135deg, #fffaf5, #fff1e6);
+    overflow: hidden;
+}
+
+/* COMMON IMAGE STYLE */
+.food {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+/* 🌟 BIG MIDDLE IMAGE */
+.img1 {
+    width: 280px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border-radius: 50%;
+}
+
+/* 🔼 TOP RIGHT CORNER */
+.img2 {
+    width: 180px;
+    height: 180px;
+    top: 20px;
+    right: 20px;
+    transform: rotate(-10deg);
+    z-index: 2;
+}
+
+/* 🔽 BOTTOM LEFT CORNER */
+.img3 {
+    width: 200px;
+    height: 200px;
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(12deg);
+    z-index: 1;
+}
+
+/* TEXT OVER IMAGE */
+.left-text {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.left-text h1 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.left-text p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* RIGHT SIDE */
+.right {
+    flex: 0.45;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+/* FORM BOX */
+.form-box {
+    width: 80%;
+    max-width: 380px;
+}
+
+.form-box h2 {
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ff7a18;
+    box-shadow: 0 0 5px rgba(255, 122, 24, 0.3);
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff7a18, #ff9a3c);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* LOGIN LINK */
+.login-link {
+    margin-top: 12px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #ff7a18;
+    font-weight: 600;
+    text-decoration: none;
+}
