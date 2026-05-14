@@ -102,7 +102,7 @@ rel="stylesheet">
                     Order from your favorite restaurants and get it delivered fast.
                 </p>
 
-                <a href="restaurants"
+                <a href="restaurant"
                    class="btn btn-warning text-white">
 
                     Explore Food
