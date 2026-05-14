@@ -73,7 +73,7 @@ public class UserController {
 		@PostMapping("/ulogin")
 		public String loginUser(@RequestParam("email") String email,
 		                        @RequestParam String password,
-		                        HttpSession session) {
+		                        HttpSession session,Model model) {
 			
 		    // fetch full user 
 			UserModel user = userService.loginUser(email,password);
@@ -87,8 +87,10 @@ public class UserController {
 			        return "redirect:/restaurant";
 			    }
 
+			    // error message
+			    model.addAttribute("error", "Incorrect email or password");
+
 			    return "login";
-			
 		
 		}
 
