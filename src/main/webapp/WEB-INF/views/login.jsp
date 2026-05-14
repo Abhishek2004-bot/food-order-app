@@ -67,9 +67,23 @@
                pattern="[A-Za-z0-9@$!%*?&]{6,}"
                title="Invalid Password"
                 autocomplete="new-password">
-    </div>
-                
-   <button type="submit" class="btn btn-login w-100 text-white">
+     </div>
+
+<%
+String error = (String) request.getAttribute("error");
+
+if(error != null){
+%>
+
+<p style="color:red; font-size:13px; margin-top:-10px; margin-bottom:10px;">
+    <%= error %>
+</p>
+
+<%
+}
+%>        
+  
+  <button type="submit" class="btn btn-login w-100 text-white">
         Login
     </button>
 
