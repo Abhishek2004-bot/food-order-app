@@ -44,7 +44,7 @@
 
         <li>
           <a class="nav-btn restaurant-btn"
-             href="${pageContext.request.contextPath}/restaurants">
+             href="${pageContext.request.contextPath}/restaurant">
             Restaurants
           </a>
         </li>
