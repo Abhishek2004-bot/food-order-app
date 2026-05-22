@@ -157,7 +157,7 @@ class node_navbar,node_styles,node_images toneIndigo
 
 ---
 
-# ✅ Features
+# Features
 
 - ✅ User Registration & Login
 - ✅ Browse Food Menu
