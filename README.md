@@ -11,7 +11,7 @@ A full-stack food ordering web application built with Java and Spring Boot.
 
 # 🌐 Live Demo
 
-👉 [Click here to view FoodSeva](https://foodseva.up.railway.app/)
+👉 [Click here to view FoodSeva](https://drive.google.com/file/d/1-KUTtbElq9JjqUakt8wJsZCschF2tjcB/view)
 
 ---
 
